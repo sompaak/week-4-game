@@ -1,0 +1,61 @@
+#heading
+{
+	background-color: #FF7F50;
+	color: white;
+	position: relative;
+	text-align: center;
+	font-size: 150%;
+}
+
+
+
+
+#instructions
+{
+	background-color: #F0E68C;
+	text-align: center;
+
+
+}
+
+#random-number
+{
+	background-color: #90EE90;
+	
+	height: 100px;
+
+}
+
+#counters
+{
+	background-color:#AFEEEE;
+	height: 100px;
+}
+
+.gems
+{
+	position: relative;
+	height: 180px;
+	width: 180px;
+}
+
+
+#score-indicator
+{
+	background-color:#008B8B;
+	text-align: center;
+}
+
+
+#pictures
+{
+	background-color: #FFD700;
+}
+
+
+#player-score
+{
+	background-color:  #ff0000;
+}
+
+

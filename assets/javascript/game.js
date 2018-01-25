@@ -3,6 +3,9 @@
 
 $(document).ready(function () {
 
+
+
+
   var target;
   var min;
   var max;
@@ -19,7 +22,8 @@ function startGame(){
   addTarget();
   refreshCystals();
   updatingScore();
-  clickGems();
+  score = 0;
+  
 }
 
 startGame();
@@ -42,6 +46,11 @@ function addTarget() {
 	
 //genreate a random number for each crystal
 //increment the score each time crystal click by the value of that crystal
+
+
+  
+
+
 	function generateRandomCrystalNumber() {
   		
   		var number =  Math.floor(Math.random() * (12 - 1 + 1) + 1);
@@ -63,7 +72,6 @@ function addTarget() {
   }
 
 
-  function clickGems(){
     
     $("#gem1").click(function(){
       checkGameState()
@@ -92,15 +100,15 @@ function addTarget() {
 
 
 
-}
+
 function checkGameState() {
   if (score === target) {
     wins++;
-    $("#win-count").text(wins);
-    startGame()
+    $("#win-count").html(wins);
+    startGame();
   } else if(score > target){
     losses++;
-    $("#loss-count").text(losses);
+    $("#loss-count").html(losses);
     startGame();
   }
 }
